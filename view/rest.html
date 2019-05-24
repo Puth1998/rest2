@@ -26,7 +26,7 @@
      <link rel="stylesheet" href="css/style.default.css">
      <!-- Modernizr -->
      <script type="text/javascript" src="js/modernizr.custom.79639.min.js"></script>
-    <title>Main</title>
+    <title>Rest</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -37,23 +37,13 @@
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                       <a class="nav-link" href="/rest2/view/index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="/rest2/view/add.html">Insert</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li> -->
+                   
                     <li class="nav-item">
                       <a class="nav-link" href="/rest2/view/edit.html" >Edit</a>
                     </li>
@@ -61,28 +51,50 @@
                             <a class="nav-link" href="/rest2/view/del.html" >Delete</a>
                           </li>
                   </ul>
-                
-                </div>  
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" id="keyword">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="button" id="btnSearch">Search</button>
-                  </form>
+                </div>
               </nav>
    
 
-    <br><br>
-    <div class="container">
-    <table class="table table-striped table-dark" border=1 width="600px">
-        <thead>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>TYPE</th>
-            <th>PRICE</th>            
-        </thead>
-        <tbody id="tblData">            
-        </tbody>
-    </table>
-    </div>
+    <!-- <br><br> -->
+    <!-- <div class="container">
+   
+    </div> -->
+    
+            <!-- Hero Section -->
+            <section id="hero" class="hero">
+                    <div id="slider" class="sl-slider-wrapper">
+    
+                        <div class="sl-slider">
+                            <!-- slide -->
+                            <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                                <div class="sl-slide-inner" style="background-image: url(img/hero-bg.jpg);">
+                                    <div class="container">
+                                        <h2>This is <span class="text-primary">Italiano restaurant</span></h2>
+                                        <h1>Bootstrap Template</h1>
+                                        <p>An elegant Bootstrap template brought to you by <a href="https://bootstraptemple.com/" target="_blank">Bootstrap Temple</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide -->
+                            <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                                <div class="sl-slide-inner" style="background-image: url(img/hero-bg02.jpg);">
+                                    <div class="container">
+                                        <h1>lorem ipsum dolor sit amit</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide -->
+                            <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+                                <div class="sl-slide-inner" style="background-image: url(img/hero-bg03.jpg);">
+                                    <div class="container">
+                                        <h2>Visit <span class="text-primary">italiano restaurant</span></h2>
+                                        <h1>lorem ipsum dolor sit amit</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End sl-slider -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -104,7 +116,7 @@
 </html>
 
 
-<script>
+<!-- <script>
     function loadData(){
         var url = "http://localhost/rest2/api/index.php/getmenus";
         $.getJSON(url).done(function( data ) {
@@ -181,5 +193,5 @@
         $("#btnSearch").click(btnSearch_click);
     });
 
-</script>
+</script> -->
 </html>
