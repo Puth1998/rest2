@@ -20,9 +20,7 @@
     </h2>
 
     <div class="container">
-            <!-- <h1>Edit Student</h1> -->
-
-            <!-- <form > -->
+            <form >
                 <!-- <input type="hidden" class="form-control" name="id" id="id" value=""> -->
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
@@ -31,7 +29,7 @@
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="validationDefault02">NAME</label>
-                        <input type="text" class="form-control" type="text" id="menu_name" required>
+                        <input type="text" class="form-control" type="text" id="menu_name" required maxlength="50">
                     </div>
                     <div class="col-md-4 mb-3">
                     </div>
@@ -49,44 +47,16 @@
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="validationDefault04">Price</label>
-                        <input class="form-control" type="number" id="menu_price" placeholder="" required>
+                        <div class="input-group-prepend">
+                            <input class="form-control" type="number" id="menu_price" maxlength="4" min=0 max=9999  required>
+                            <span class="input-group-text">$</span>
+                        </div>
                     </div>
                 </div>
                 <button class="btn btn-outline-success" type="button" value="เพิ่มข้อมูล" name='submit' id="btnSave">Insert</button>
-            <!-- </form> -->
-
+            </form>
+    </div>
           
-
-        <!-- <table >
-            <tr>
-                <th >รหัสเมนู</th>
-                <td><input type="text" id="menu_id"> </td>
-            </tr>
-            <tr>
-                <th>ชื่อเมนู</th>
-                <td><input type="text" id="menu_name"></td>
-            </tr>
-            <tr>
-                <th>ประเภทอาหาร</th>
-                <td>
-                <select required  id="menu_type">
-                    <option value=1>อาหารคาว</option>
-                    <option value="2">อาหารหวาน</option>
-                    <option value="3">อาหารว่าง</option>
-                </select>
-                </td>
-            </tr>
-            <tr>
-                <th>ราคา</th>
-                <td><input type="number" id="menu_price" /></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><input type="button" value="เพิ่มข้อมูล" name='submit' id="btnSave"></td>
-            </tr>
-        
-        </table> -->
-
         <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

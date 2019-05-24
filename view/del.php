@@ -20,38 +20,48 @@
     <a href="/rest2/view/del.php" class="text-danger">ลบข้อมูล</a>
     </h2>
 
-         <table>
-            <tr>
-                <th>รหัสเมนู</th>
-                <td><input type="text" id="keyword"></td>
-                <td><input type="button" id="btnSearch" value="สืบค้น"></td>
-            </tr>
-        </table>
-  
-         <table>
-            <tr>
-                <th>รหัสเมนู</th>
-                <td><span id="menu_id"></span></td>
-            </tr>
-            <tr>
-                <th>ชื่อเมนู</th>
-                <td><span id="menu_name"></span></td>
-            </tr>
-            <tr>
-                <th>ประเภทอาหาร</th>
-                <td><span id="menu_type"  ></span></td>
-              </tr>
-            <tr>
-                <th>ราคา</th>
-                <td><span id="menu_price"  ></span></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><input type="button" value="ลบข้อมูล" id='btnDelete'></td>  
-            </tr>
-        
-        </table> 
-        <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
+    
+        <div class="container">
+            <form class="form-inline my-2 my-lg-0" >
+            <input class="form-control mr-sm-2"  type="text" id="keyword">
+            <button class="btn btn-outline-info" type="button" id="btnSearch" value="สืบค้น">ID</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <form >
+                <!-- <input type="hidden" class="form-control" name="id" id="id" value=""> -->
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault01">ID</label>
+                        <span type="text" class="form-control" id="menu_id"  readonly></span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault02">NAME</label>
+                        <span type="text" class="form-control"  id="menu_name" readonly></span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                    <label for="validationDefault04">Type</label>
+                        <span class="form-control" id="menu_type" readonly ></span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault04">Price</label>
+                        <div class="input-group-prepend">
+                            <span class="form-control" id="menu_price" readonly></span>
+                            <span class="input-group-text">$</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline-danger" type="button" value="ลบข้อมูล" id='btnDelete'>Delete</button>
+            </form>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
