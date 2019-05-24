@@ -11,11 +11,11 @@
 <body>
     <h1 class="p-3 mb-2 bg-info text-white">Search Page</h1>
     <h2> 
-    <a href="/rest2/view/index.php" class="text-secondary">หน้าหลัก</a>
-    <a href="/rest2/view/add.php" class="text-success">เพิ่มข้อมูล</a>    
-    <a href="/rest2/view/search.php" class="text-info">ค้นหาข้อมูล</a>    
-    <a href="/rest2/view/edit.php"class="text-warning">แก้ไขข้อมูล</a>    
-    <a href="/rest2/view/del.php" class="text-danger">ลบข้อมูล</a>
+        <a href="/rest2/view/index.html" class="text-secondary">Main</a>
+        <a href="/rest2/view/add.html" class="text-success">Insert</a>    
+        <a href="/rest2/view/search.html" class="text-info">Search</a>    
+        <a href="/rest2/view/edit.html"class="text-warning">Edit</a>    
+        <a href="/rest2/view/del.html" class="text-danger">Delete</a>
     </h2>
 
     <div class="container">
@@ -35,10 +35,10 @@
     <div class="container">
     <table class="table table-striped table-info" border=1 width="600px">
         <thead>
-            <th>รหัสเมนู</th>
-            <th>ชื่อเมนูอาหาร</th>
-            <th>ประเภทอาหาร</th>
-            <th>ราคา</th>            
+            <th>ID</th>
+            <th>NAME</th>
+            <th>TYPE</th>
+            <th>PRICE</th>     
         </thead>
         <tbody id="tblData">            
         </tbody>
@@ -63,20 +63,20 @@
                         var line = "";
                         $.each(feedback, function(k,item){
                             console.log(item);
-                            line += "<tr><td align='center'>"+ item.menu_id+"</td>";
+                            line += "<tr><td >"+ item.menu_id+"</td>";
                             line += "<td>"+item.menu_name+"</td>";
-                            line += "<td align='center'>";
+                            line += "<td >";
                             
                             switch(item['menu_type']){
-                                    case "1":
-                                        line +="อาหารคาว";break;
-                                    case "2":
-                                        line +="อาหารหวาน";break;
-                                    case "3":
-                                        line +="อาหารว่าง";break;    
-                                }
+                                case "1":
+                                    line +="Savory food";break;
+                                case "2":
+                                    line +="Dessert";break;
+                                case "3":
+                                    line +="Snack";break;    
+                            }
                             line +="</td>";
-                            line += "<td align='right'>"+item.menu_price+"</td>";
+                            line += "<td >"+item.menu_price+"</td>";
                             line += "</tr>";
                         });
 

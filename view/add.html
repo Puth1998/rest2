@@ -7,16 +7,16 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Add</title>
+    <title>Insert</title>
 </head>
 <body>
-    <h1 class="p-3 mb-2 bg-success text-white">Add Page</h1>
+    <h1 class="p-3 mb-2 bg-success text-white">Insert Page</h1>
     <h2> 
-    <a href="/rest2/view/index.php" class="text-secondary">หน้าหลัก</a>
-    <a href="/rest2/view/add.php" class="text-success">เพิ่มข้อมูล</a>    
-    <a href="/rest2/view/search.php" class="text-info">ค้นหาข้อมูล</a>    
-    <a href="/rest2/view/edit.php"class="text-warning">แก้ไขข้อมูล</a>    
-    <a href="/rest2/view/del.php" class="text-danger">ลบข้อมูล</a>
+    <a href="/rest2/view/index.html" class="text-secondary">Main</a>
+    <a href="/rest2/view/add.html" class="text-success">Insert</a>    
+    <a href="/rest2/view/search.html" class="text-info">Search</a>    
+    <a href="/rest2/view/edit.html"class="text-warning">Edit</a>    
+    <a href="/rest2/view/del.html" class="text-danger">Delete</a>
     </h2>
 
     <div class="container">
@@ -83,7 +83,7 @@
                     success: function(feedback){
                         alert(feedback.status);
                         if(feedback.result == "OK")
-                            window.location = '/rest2/view/index.php';
+                            window.location = '/rest2/view/index.html';
                     },
                     data: data
             });

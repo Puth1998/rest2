@@ -13,11 +13,11 @@
 <body>
     <h1 class="p-3 mb-2 bg-danger text-white">Delete Page</h1>
     <h2> 
-    <a href="/rest2/view/index.php" class="text-secondary">หน้าหลัก</a>
-    <a href="/rest2/view/add.php" class="text-success">เพิ่มข้อมูล</a>    
-    <a href="/rest2/view/search.php" class="text-info">ค้นหาข้อมูล</a>    
-    <a href="/rest2/view/edit.php"class="text-warning">แก้ไขข้อมูล</a>    
-    <a href="/rest2/view/del.php" class="text-danger">ลบข้อมูล</a>
+        <a href="/rest2/view/index.html" class="text-secondary">Main</a>
+        <a href="/rest2/view/add.html" class="text-success">Insert</a>    
+        <a href="/rest2/view/search.html" class="text-info">Search</a>    
+        <a href="/rest2/view/edit.html"class="text-warning">Edit</a>    
+        <a href="/rest2/view/del.html" class="text-danger">Delete</a>
     </h2>
 
     
@@ -79,7 +79,7 @@ function btnDelete_click(){
                     success: function(feedback){
                         alert(feedback.status);
                         if(feedback.result == "OK")
-                            window.location = '/rest2/view/index.php';
+                            window.location = '/rest2/view/index.html';
                     },
                     data: data
             });
